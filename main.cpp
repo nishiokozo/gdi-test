@@ -37,6 +37,10 @@ static	LRESULT CALLBACK WinProc( HWND hWnd, UINT uMsg, WPARAM	wParam, LPARAM	lPa
 			}
 			return 0;
 
+		case WM_ERASEBKGND:	//	BeginPaint()タイミング(WM_PAINTの中）で呼び出される。
+		
+			return 0;
+
 		case WM_KEYDOWN:
 			if ( wParam == 27 ) SendMessage(hWnd , WM_DESTROY , 0 , 0);	
 			return 0;

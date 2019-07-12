@@ -1,0 +1,7 @@
+obj
+*.exe.stackdump
+*.exe
+a.txt
+*.o
+*.s
+*.bak
